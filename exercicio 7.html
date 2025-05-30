@@ -1,0 +1,18 @@
+<script>
+  let anoNascimento = Number(prompt("Data de Nascimento"));
+  let anaAtual = new Date().getFullYear();
+
+  let idade =   anaAtual - anoNascimento;
+console.log(idade);
+  if (idade > 16) {
+    alert("Voce pode assistir o filme!");
+  } else {
+    let acompanhado = prompt("acompanhado dos responsaveis!");
+
+    if (acompanhado === "sim") {
+      alert("Voce pode assistir o filme!");
+    } else {
+      alert("Voce nao pode assistir o filme!");
+    }
+  }
+</script>
